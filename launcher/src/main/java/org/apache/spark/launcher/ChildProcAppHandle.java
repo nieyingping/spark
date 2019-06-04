@@ -27,7 +27,12 @@ import java.util.logging.Logger;
 /**
  * Handle implementation for monitoring apps started as a child process.
  */
-class ChildProcAppHandle implements SparkAppHandle {
+class ChildProcAppHandle implements SparkAppHandleS,Serializable {
+  
+  /**
+  *
+  */
+  private static final long serialVersionUID = 1L;
 
   private static final Logger LOG = Logger.getLogger(ChildProcAppHandle.class.getName());
 
